@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+html {
+    /*rem单位永远以html做参考缩放；百分比和em以父元素做参考*/
+    font-size: 625%; /*16*6.25=100px*/
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #000000;
+    max-width: 750px; /*效果图的宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.26rem; /*body中默认使用做多的字体大小*/
+    background: #f7f7f7;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

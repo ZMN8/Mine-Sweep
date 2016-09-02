@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <style>
+        body,div,ul,li,span,strong,p{padding:0;margin:0;}
+        #bigArea{margin: 100px auto 0;width:400px;}
+        #bigArea ul{*zoom:1;width:400px;margin:0 auto;}
+        #bigArea ul:after{content: ".";visibility: hidden;height:0;font-size: 0;clear: both;display: block;}
+        #bigArea ul li{list-style:none;float: left;width:37px;height:37px;border: 3px double #000000;margin-left: -3px;margin-bottom: -3px;background-color: #888;line-height: 37px; text-align: center;  font-size: 20px;  font-weight: bold;}
+        #bigArea .qi,#bigArea .lei {background-repeat: no-repeat;background-position: center center; background-size: 100% 100%;}
+        p{margin: 8px auto 0 ;}
+        p span{color: red;font-weight: bold;}
+        p strong{color: blue;}
+        #bigArea .lei { background-image: url(images/lei.jpg);}
+        #bigArea .qi { background-image: url(images/qi.jpg);}
+        #bigArea .none { background: #ccc;}
+
+    </style>
+</head>
+<body>
+<div id="bigArea">
+    <ul>
+
+    </ul>
+    <p class="message">剩余<span>10</span>个旗子，总共<strong>10</strong>个炸弹</p>
+</div>
+
+<script src="js/js.js"></script>
+</body>
+</html>
